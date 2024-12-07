@@ -1,0 +1,26 @@
+{
+  "packages": {
+    "image-set": {
+      "displayName": "Free Templates"
+    },
+    "video-games": {
+      "displayName": "Video Games",
+      "googleFont": "Saira",
+      "backgroundImage": "/splash/thefinals-red-bg.webp"
+    },
+    "artists": {
+      "displayName": "Artists",
+      "googleFont": "Cinzel",
+      "backgroundImage": "/splash/wuwa-bg-1.webp"
+    },
+    "logos": {
+      "displayName": "Logos",
+      "googleFont": "Russo One",
+      "backgroundImage": "/splash/overwatch-bg.webp"
+    },
+    "languages": {
+      "displayName": "Languages",
+      "backgroundImage": "/splash/webdev-bg.webp"
+    }
+  }
+}

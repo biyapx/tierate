@@ -1,0 +1,36 @@
+{
+  "packages": {
+    "image-set": {
+      "displayName": "image-set",
+      "images": [],
+      "tags": {}
+    },
+    "video-games": {
+      "displayName": "Video Games",
+      "images": [],
+      "tags": {},
+      "googleFont": "Saira",
+      "backgroundImage": "/videogames.png"
+    },
+    "artists": {
+      "displayName": "Artists",
+      "images": [],
+      "tags": {},
+      "googleFont": "Cinzel",
+      "backgroundImage": "/artists.png"
+    },
+    "logos": {
+      "displayName": "Logos",
+      "images": [],
+      "tags": {},
+      "googleFont": "Russo One",
+      "backgroundImage": "/logos.png"
+    },
+    "languages": {
+      "displayName": "Languages",
+      "images": [],
+      "tags": {},
+      "backgroundImage": "/languages.png"
+    }
+  }
+}
