@@ -26,7 +26,7 @@ const fontHeading = FontHeading({
 });
 
 const getBaseUrl = () => {
-  let baseUrl = 'https://AmazingTier.com';
+  let baseUrl = 'https://Tierate.com';
   if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
     try {
       baseUrl = new URL(`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`).toString().replace(/\/$/, '');
@@ -41,26 +41,26 @@ const baseUrl = getBaseUrl();
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: "AmazingTier - Craft, Rank, and Share Your Tier Lists",
-  description: "AmazingTier: The free, open-source tier list creator that helps you craft, rank and share your passion! No ads, no logins, no sign-ups. Create and instantly share your tier lists simply by copying the URL to your tier list.",
+  title: "Tierate",
+  description: "Tierate helps you craft, rank and share your passion! No ads, no logins, no sign-ups. Create and instantly share your tier lists simply by copying the URL to your tier list.",
   keywords: "tier list, maker, creator, generator, open-source, free, share, rank, community, tier maker, rank, rankings, game",
   openGraph: {
-    title: "AmazingTier - Craft, Rank, and Share Your Tier Lists",
-    description: "AmazingTier: The free, open-source tier list creator that helps you craft, rank and share your passion! No ads, no logins, no sign-ups. Create and instantly share your tier lists simply by copying the URL to your tier list.",
+    title: "Tierate - Craft, Rank, and Share Your Tier Lists",
+    description: "Tierate: The free, open-source tier list creator that helps you craft, rank and share your passion! No ads, no logins, no sign-ups. Create and instantly share your tier lists simply by copying the URL to your tier list.",
     url: baseUrl,
-    siteName: "AmazingTier",
+    siteName: "Tierate",
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: "AmazingTier - Craft, Rank, and Share Your Tier Lists",
-    description: "AmazingTier: The free, open-source tier list creator that helps you craft, rank and share your passion! No ads, no logins, no sign-ups. Create and instantly share your tier lists simply by copying the URL to your tier list.",
+    title: "Tierate - Craft, Rank, and Share Your Tier Lists",
+    description: "Tierate: The free, open-source tier list creator that helps you craft, rank and share your passion! No ads, no logins, no sign-ups. Create and instantly share your tier lists simply by copying the URL to your tier list.",
   },
   other: {
-    'application-name': 'AmazingTier',
+    'application-name': 'Tierate',
   },
-  authors: [{ name: 'AmazingTier Team' }],
+  authors: [{ name: 'Tierate Team' }],
   alternates: {
     canonical: baseUrl,
   }
@@ -69,8 +69,8 @@ export const metadata: Metadata = {
 const STRUCTURED_METADATA = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: 'AmazingTier',
-  description: "AmazingTier: The free, open-source tier list creator that helps you craft, rank and share your passion! No ads, no logins, no sign-ups. Create and share your tier lists instantly simply by copying the URL to your tier list.",
+  name: 'Tierate',
+  description: "Tierate: The free, open-source tier list creator that helps you craft, rank and share your passion! No ads, no logins, no sign-ups. Create and share your tier lists instantly simply by copying the URL to your tier list.",
   url: baseUrl,
   applicationCategory: 'UtilitiesApplication',
   operatingSystem: 'Web',
@@ -103,22 +103,22 @@ const STRUCTURED_METADATA = {
       '@type': 'ViewAction',
       target: `${baseUrl}/about`,
       name: "About",
-      description: "Learn more about AmazingTier"
+      description: "Learn more about Tierate"
     },
     {
       '@type': 'ViewAction',
       target: `${baseUrl}/blog`,
       name: "Blog",
-      description: "Read the latest blog posts from AmazingTier"
+      description: "Read the latest blog posts from Tierate"
     },
   ],
   sameAs: [
-    'https://github.com/infinia-yzl/AmazingTier',
+    'https://github.com/infinia-yzl/Tierate',
     'https://discord.gg/CEtDSHV38b'
   ],
   author: {
     '@type': 'Organization',
-    name: 'AmazingTier Team',
+    name: 'Tierate Team',
     url: baseUrl
   },
   isAccessibleForFree: true,
@@ -155,7 +155,7 @@ export default function RootLayout({
               <div className="flex flex-row py-4 justify-between items-center">
                 <div className="flex flex-row items-center space-x-6">
                   <a href="/" className="flex items-center">
-                    <Image src={Logo} alt="AmazingTier" height={40} priority />
+                    <Image src={Logo} alt="Tierate" height={40} priority />
                   </a>
                   <nav className="flex space-x-2">
                     <Button asChild variant="ghost" className="text-muted-foreground">
@@ -190,20 +190,20 @@ export default function RootLayout({
             <div className="max-w-screen-lg zen-mode:hide-in-zen mx-auto px-4">
               <div className="grid grid-cols-1 sm:grid-cols-3 text-center sm:text-start gap-8 items-start">
                 <div className="flex flex-col space-y-2">
-                  <p className="text-sm text-muted-foreground">AmazingTier is an open-source project.</p>
+                  <p className="text-sm text-muted-foreground">Tierate is an open-source project.</p>
                   <p className="text-sm text-muted-foreground">No ads, no logins, no sign-ups.</p>
                   <div className="flex flex-row space-x-4 h-5 justify-center sm:justify-start">
                     <a href="/" className="text-sm hover:underline">Home</a>
                     <Separator orientation="vertical" />
                     <a href="/about" className="text-sm hover:underline">About</a>
                     <Separator orientation="vertical" />
-                    <a href="mailto:AmazingTier@infinia.space" className="text-sm hover:underline">Email</a>
+                    <a href="mailto:Tierate@infinia.space" className="text-sm hover:underline">Email</a>
                   </div>
                 </div>
                 <div className="flex flex-col items-center justify-center space-y-4 p-4">
                   <div className="flex space-x-2">
                     <Button variant="ghost" asChild size="icon">
-                      <a href="https://github.com/infinia-yzl/AmazingTier" className="text-foreground hover:text-primary"
+                      <a href="https://github.com/infinia-yzl/Tierate" className="text-foreground hover:text-primary"
                         aria-label="GitHub">
                         <GitHubLogoIcon className="h-5 w-5" />
                       </a>
@@ -215,20 +215,22 @@ export default function RootLayout({
                       </a>
                     </Button>
                     <Button variant="ghost" asChild size="icon">
-                      <a href="https://x.com/AmazingTier" className="text-foreground hover:text-primary" aria-label="X.com">
+                      <a href="https://x.com/Tierate" className="text-foreground hover:text-primary" aria-label="X.com">
                         <FaXTwitter className="h-5 w-5" />
                       </a>
                     </Button>
                   </div>
-                  <p className="text-center text-sm text-muted-foreground py-1">
-                    © 2024 AmazingTier. All rights reserved.
-                  </p>
+                  
                 </div>
                 <div className="flex flex-col space-y-2 lg:pl-48">
-                  <h3 className="text-sm font-semibold text-muted-foreground">Legal</h3>
+                <div className="text-center text-sm text-muted-foreground py-1">
+                   
+                   <p>© 2024 Tierate. 
+                    All rights reserved.
+                  </p>
                  
                 </div>
-              </div>
+                </div></div>
             </div>
           </footer>
           <Toaster />
