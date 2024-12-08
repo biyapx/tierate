@@ -3,7 +3,7 @@ import {Card, CardContent, CardHeader} from "@/components/ui/card";
 import {Button} from "@/components/ui/button";
 import {GitHubLogoIcon} from "@radix-ui/react-icons";
 import Image from "next/image";
-import otbLogo from "@/public/brand/otb-logo-wide.webp";
+import Logo from "@/public/logo3.png";
 import {FaDiscord} from "react-icons/fa6";
 import {
   Breadcrumb,
@@ -30,20 +30,28 @@ const AboutPage = () => {
       </Breadcrumb>
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-20 text-center">
-        <h1 className="text-2xl md:text-3xl font-light mb-12 flex flex-col justify-center">
+        <Card className='flex bg-emerald-600/10 justify-between'>
+        <Card className='w-1/2 px-4'>
+        <h1 className="text-0.5xl md:text-xl font-light mb-12 flex flex-col justify-center p-10">
           <div className="flex justify-center mb-6 max-w-[600]">
-            <Image src={otbLogo} alt="AmazingTier" priority/>
+            <Image src={Logo} width={100} height={100} alt="Tierate" priority/>
           </div>
-          Craft, rank and share your passion - the open-source way!
+          Craft, rank and share your tier list
         </h1>
+        </Card>
+        <Card className='w-1/2 px-4'>
+        <div>
+          Made with love by Biya
+        </div>
+        </Card>
+        </Card>
       </section>
-
     </div>
   );
 };
 
 export async function generateMetadata(): Promise<Metadata> {
-  let baseUrl = 'https://AmazingTier.com';
+  let baseUrl = 'https://tierate.vercel.app';
 
   // If VERCEL_PROJECT_PRODUCTION_URL is defined and valid, prepend it to the ogImageUrl
   if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
@@ -54,8 +62,8 @@ export async function generateMetadata(): Promise<Metadata> {
     }
   }
 
-  const title = "About AmazingTier - Craft, Rank, and Share Your Passion";
-  const description = "AmazingTier is a free, open-source platform for creating and sharing tier lists. Learn about our mission, community-driven approach, and how you can contribute.";
+  const title = "About Tierate - Craft, Rank, and Share Your Passion";
+  const description = "Tierate is a free, open-source platform for creating and sharing tier lists. Learn about our mission, community-driven approach, and how you can contribute.";
   const canonicalUrl = `${baseUrl}/about`;
 
   const jsonLd = {
@@ -66,12 +74,12 @@ export async function generateMetadata(): Promise<Metadata> {
     url: canonicalUrl,
     isPartOf: {
       '@type': 'WebSite',
-      name: 'AmazingTier',
+      name: 'Tierate',
       url: baseUrl,
     },
     about: {
       '@type': 'SoftwareApplication',
-      name: 'AmazingTier',
+      name: 'Tierate',
       applicationCategory: 'UtilitiesApplication',
       operatingSystem: 'Web',
     },
@@ -84,14 +92,14 @@ export async function generateMetadata(): Promise<Metadata> {
       title,
       description,
       url: canonicalUrl,
-      siteName: 'AmazingTier',
+      siteName: 'Tierate',
       type: 'website',
       images: [
         {
           url: `${baseUrl}/brand/otb-logo-wide.webp`,
           width: 600,
           height: 190,
-          alt: 'AmazingTier Logo',
+          alt: 'Tierate Logo',
         },
       ],
     },
@@ -108,7 +116,7 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     other: {
-      'application-name': 'AmazingTier',
+      'application-name': 'Tierate',
     },
   };
 }

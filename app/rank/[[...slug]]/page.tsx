@@ -58,6 +58,10 @@ export async function generateStaticParams() {
   return params;
 }
 
+async function searchlogos(name: string){
+  const data = await fetch(`cdn.brandfetch.io/${name}/w/400/h/400?c={process.env.CLIENT_ID}`)
+}
+
 async function getItemSetData(nameOrPackage: string, tagSlug: string): Promise<ItemSet | null> {
   let packageName: string | undefined;
   let packageData: ImageSetConfig["packages"]["data"] | undefined;
@@ -223,6 +227,7 @@ export default async function TierListPage({
         initialState={initialState}
         title={title}
       />
+      <div></div>
     </div>
   );
 }

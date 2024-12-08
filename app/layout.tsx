@@ -113,8 +113,7 @@ const STRUCTURED_METADATA = {
     },
   ],
   sameAs: [
-    'https://github.com/infinia-yzl/Tierate',
-    'https://discord.gg/CEtDSHV38b'
+    'https://github.com/biyacraft/Tierate'
   ],
   author: {
     '@type': 'Organization',
@@ -197,25 +196,25 @@ export default function RootLayout({
                     <Separator orientation="vertical" />
                     <a href="/about" className="text-sm hover:underline">About</a>
                     <Separator orientation="vertical" />
-                    <a href="mailto:Tierate@infinia.space" className="text-sm hover:underline">Email</a>
+                    <a href="mailto:ayalkbettesfahun@gmail.com" className="text-sm hover:underline">Email</a>
                   </div>
                 </div>
                 <div className="flex flex-col items-center justify-center space-y-4 p-4">
                   <div className="flex space-x-2">
                     <Button variant="ghost" asChild size="icon">
-                      <a href="https://github.com/infinia-yzl/Tierate" className="text-foreground hover:text-primary"
+                      <a href="https://github.com/biyacraft/Tierate" className="text-foreground hover:text-primary"
                         aria-label="GitHub">
                         <GitHubLogoIcon className="h-5 w-5" />
                       </a>
                     </Button>
                     <Button variant="ghost" asChild size="icon">
-                      <a href="https://discord.gg/CEtDSHV38b" className="text-foreground hover:text-primary"
+                      <a href="https://discord.gg/" className="text-foreground hover:text-primary"
                         aria-label="Discord">
                         <FaDiscord className="h-5 w-5" />
                       </a>
                     </Button>
                     <Button variant="ghost" asChild size="icon">
-                      <a href="https://x.com/Tierate" className="text-foreground hover:text-primary" aria-label="X.com">
+                      <a href="https://x.com/abi4io" className="text-foreground hover:text-primary" aria-label="X.com">
                         <FaXTwitter className="h-5 w-5" />
                       </a>
                     </Button>
